@@ -246,4 +246,25 @@ img::-moz-selection {
     font-weight: 700;
 }
 
+/* --------------------- Buttons --------------------------- */
+
+.btn-info {
+    color: #fff;
+    background-color: #5bc0de;
+    border-color: #46b8da;
+}
+.btn {
+    padding: 0px 5px 0px 3px;
+}
+
+.collapse {
+	padding-left:30pt;
+	font-size:medium; 
+}
+
+.collapsing {
+	padding-left:30pt;
+	font-size:medium; 
+}
+
 
