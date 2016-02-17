@@ -18,6 +18,11 @@
 
     <!-- Custom CSS -->
     <link href="css/style.css" rel="stylesheet">
+ 
+    <!-- Mathjax -->
+    <script type="text/javascript" async
+      src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -25,6 +30,8 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+	
 
 </head>
 
@@ -63,19 +70,6 @@
     </nav>
 
     <div class="container" style="margin-top:40pt;">
-
-<!--
-       <section class="bg-light-gray" style="margin-top:10pt;">
-            <h5> Plenary speakers (not all confirmed) </h5> 
-            <ul> 
-            <li>Folkmar Borneman (TU Munich)</li>
-            <li>Nick Higham (University of Manchester)</li>
-            <li>Beatrice Pelloni (UCL)</li>
-            <li>Nick Trefethen (University of Oxford)</li>
-            <li>Walter Van Assche (KU Leuven)</li>
-            </ul>
-        </section>
--->
 
         <section id="team" class="bg-light-gray" style="margin-top:10pt;">
             <h4>Plenary speakers</h4>
@@ -140,7 +134,47 @@
             <li>Folkmar Bornemann (TU Munich)
                 <ul><li>Numerical Problems Inspired by Discrete Complex Analysis</li></ul></li>
             <li>Nick Higham (University of Manchester)
-                <ul><li>Challenges in Multivalued Matrix Functions</li></ul>
+                <ul><li>Challenges in Multivalued Matrix Functions		
+			  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#abstract_pelloni">view abstract</button>
+			  <div id="abstract_pelloni" class="collapse">
+				<p>Multivalued matrix functions arise in solving various kinds of matrix
+					equations.  
+					The matrix logarithm is the prototypical example.
+					Another example is the Lambert W function of a matrix,
+					which is much less well known but has been attracting recent interest.
+					A theme of the talk is
+					the importance of choosing appropriate principal values
+					and making sure that the correct choices of signs and branches
+					are used, both in theory and in computation.
+					We will give examples where incorrect results have previously been obtained.</p>
+					
+				<p>We focus on 
+					matrix inverse trigonometric and inverse hyperbolic functions,
+					beginning by investigating existence and characterization.
+					Turning to the principal values,
+					various functional identities are derived,
+					some of which are new even in the scalar case,
+					including a ``round trip'' formula that relates 
+					$\mathrm{acos}(\cos A)$ to $A$
+					and similar formulas for the other inverse functions.
+					Key tools used in the derivations are the matrix unwinding function and the
+					matrix sign function.</p>
+				
+				<p>A new inverse scaling and squaring type algorithm employing 
+					a Schur decomposition and variable-degree 
+					Pad\'e approximation is derived for computing acos, and it is shown how it
+					can also be used to compute $\asin$, $\acosh$, and $\asinh$.
+					In numerical experiments the algorithm is found to behave in a 
+					forward stable fashion and to be superior to computing these functions via
+					logarithmic formulas.</p>
+			  </div>
+		</li></ul></li>
+
+
+
+
+
+
             <li>Elizabeth Mansfield (University of Kent)
                 <ul><li>Lattice based Multispace and Moving Frames</li></ul></li>            
             <li>Beatrice Pelloni (University of Reading)
