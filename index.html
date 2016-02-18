@@ -120,7 +120,40 @@
             <li>Folkmar Bornemann (TU Munich)
                 <ul><li>Numerical Problems Inspired by Discrete Complex Analysis</li></ul></li>
             <li>Nick Higham (University of Manchester)
-                <ul><li>Challenges in Multivalued Matrix Functions</li></ul>
+                <ul><li>Challenges in Multivalued Matrix Functions		
+			  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#abstract_higham">view abstract</button>
+			  <div id="abstract_higham" class="collapse">
+				<p>Multivalued matrix functions arise in solving various kinds of matrix
+					equations.  
+					The matrix logarithm is the prototypical example.
+					Another example is the Lambert W function of a matrix,
+					which is much less well known but has been attracting recent interest.
+					A theme of the talk is
+					the importance of choosing appropriate principal values
+					and making sure that the correct choices of signs and branches
+					are used, both in theory and in computation.
+					We will give examples where incorrect results have previously been obtained.</p>
+					
+				<p>We focus on 
+					matrix inverse trigonometric and inverse hyperbolic functions,
+					beginning by investigating existence and characterization.
+					Turning to the principal values,
+					various functional identities are derived,
+					some of which are new even in the scalar case,
+					including a "round trip'' formula that relates 
+					<b>acos(cos A)</b> to <b>A</b>
+					and similar formulas for the other inverse functions.
+					Key tools used in the derivations are the matrix unwinding function and the
+					matrix sign function.</p>
+				
+				<p>A new inverse scaling and squaring type algorithm employing 
+					a Schur decomposition and variable-degree 
+					Pad&eacute; approximation is derived for computing acos, and it is shown how it
+					can also be used to compute <b>asin</b>, <b>acosh</b>, and <b>asinh</b>.
+					In numerical experiments the algorithm is found to behave in a 
+					forward stable fashion and to be superior to computing these functions via
+					logarithmic formulas.</p>
+		</li></ul></li>
             <li>Elizabeth Mansfield (University of Kent)
                 <ul><li>Lattice based Multispace and Moving Frames</li></ul></li>            
             <li>Beatrice Pelloni (University of Reading)
